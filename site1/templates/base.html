@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01//EN'>
+<html lang=”en”>
+{% load staticfiles %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/mysite.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+    <title>Attractions in Nazareth</title>
+</head>
+
+<body>
+<h2><a href="/">MAIN PAGE</a></h2>
+{% block search_form %}
+{% endblock %}
+{% block my_cart %}
+{% endblock %}
+{% block congrats %}
+{% endblock %}
+</body>
+</html>

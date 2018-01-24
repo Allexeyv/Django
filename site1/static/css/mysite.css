@@ -1,0 +1,65 @@
+.top_text {
+    color: white;
+    font-size: 26pt;
+    font-weight: 700;
+    font-family: Verdana;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    float:left;
+
+}
+
+.orange_ribbon {
+    background-color: #ff9400;
+    overflow: hidden;
+    padding: 30px 20px 0px 20px;
+    margin: 20px 0px 20px 0px;
+
+}
+
+.sub_titles {
+    color: white;
+    background-color: #ff9400;
+    padding: 20px 20px 20px 20px;
+    margin-right: 20px
+    margin: 0px 30px 10px 0px;
+}
+
+a {
+color: black;
+text-decoration:none;
+}
+
+body {
+    padding-left: 15px;
+    font-family: 'Arial';
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.link{
+    text-decoration: underline;
+    }
+
+.square {
+  float: left;
+  width: 250px;
+  height: 250px;
+  background: brown;
+  margin: 0px 30px 10px 0px;
+}
+
+
+p {
+margin-right: 200;
+}
+
+
+order {
+    background-color: red;
+    overflow: hidden;
+    padding: 30px 20px 0px 20px;
+    margin: 20px 0px 20px 0px;
+}
+
