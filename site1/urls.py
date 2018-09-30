@@ -11,7 +11,7 @@ router.register(r'towns', views.TownsViewSet)
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^search/$', views.search, name='search'),
-    url(r'^pages/(.+)$', views.pages, name='pages'),
+    url(r'pages/(.+)$', views.pages, name='pages'),
     url(r'^my_cart/$', views.my_cart),
     url(r'^add_to_cart/(.+)$', views.add_to_cart),
     url(r'^order/$', views.order),

@@ -6,6 +6,8 @@ from django.template import RequestContext
 from .forms import ContactForm
 from rest_framework import viewsets
 from .serializers import AttractionsSerializer, TownsSerializer
+# from django.core.cache import cache
+# cache._cache.flush_all()
 
 
 class AttractionsViewSet(viewsets.ModelViewSet):
@@ -22,9 +24,6 @@ class TownsViewSet(viewsets.ModelViewSet):
     """
     queryset = Towns.objects.all()
     serializer_class = TownsSerializer
-
-
-
 
 
 def index(request):
@@ -79,7 +78,7 @@ def order(request):
     client_name = p['client_name']
     phone_number = p['phone_number']
     cart_list = p['cart_list']
-    s = ContactForm({'client_name':client_name, 'phone_number':phone_number, 'order':cart_list})
+    s = ContactForm({'client_name': client_name, 'phone_number': phone_number, 'order': cart_list})
     if s.is_valid():
         d = Orders(client_name=client_name, phone_number=phone_number, order=cart_list)
         d.save()

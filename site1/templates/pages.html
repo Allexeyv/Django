@@ -1,11 +1,18 @@
-{% extends 'search_form.html' %}
+{% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
 
     {% for atr in data %}
 
-<div class="orange_ribbon">
-    <div class="top_text"> {{ atr.name }} </div>
+
+<div class="container">
+
+
+    <div class="jumbotron">
+      <h1>{{ atr.name }}</h1>
+
+
+
 <a href= "/my_cart/" >
     <div class="icon-cart" style="float: right">
         <div class="cart-line-1" style="background-color: white"></div>
@@ -14,7 +21,7 @@
         <div class="cart-wheel" style="background-color: white"></div>
       </div>
 </a>
-</div>
+
 
 
     <img src= "{% static atr.image.url %}" class="square" >
@@ -28,7 +35,8 @@
     <a href="{{ atr.google_map }}" class="link">Google Maps</a> |
     <a href="{{ atr.website }}" class="link">Web Site</a>
     </p>
-<br><br><br><br><br><br><br><br><br>
+</div>
+</div>
 
 {% if atr.name != 'Nazareth' %}
 <div><a href= "/add_to_cart/{{ atr.name }}" class="link">ADD TOUR TO CART</a></div>
