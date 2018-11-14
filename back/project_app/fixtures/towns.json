@@ -1,0 +1,10 @@
+[
+  {"model": "project_app.town", "pk": 1,
+    "fields": {"name": "Nazareth", "text": ""}},
+  {"model": "project_app.town", "pk": 2,
+    "fields": {"name": "Jerusalem", "text": ""}},
+  {"model": "project_app.attraction", "pk": 1,
+    "fields": {"name": "CMDN", "town": "Nazareth"}},
+  {"model": "project_app.attraction", "pk": 2,
+    "fields": {"name": "Mount Tabor", "town": "Nazareth"}}
+]

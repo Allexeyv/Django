@@ -1,4 +1,0 @@
-Django~=1.11.0
-djangorestframework
-Pillow
-python-memcached
